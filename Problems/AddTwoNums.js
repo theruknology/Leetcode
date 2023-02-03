@@ -8,31 +8,8 @@ const ListNode = (val, next) => {
 };
 
 const addTwoNums = (l1, l2) => {
-  const liToNum = (l) => {
-    let number = 0;
-    let power = 0;
-    while (l != null) {
-      number += l.val * 10 ** power;
-      power++;
-      l = l.next;
-    }
-    return number;
-  };
-
-  const sum = liToNum(l1) + liToNum(l2);
-  const sumStr = sum.toPrecision(21);
-  const sumLi = ListNode();
-  let cur = sumLi;
-
-  for (let i = sumStr.length; i > 0; i--) {
-    cur.val = sumStr[i - 1];
-    if (sumStr[i-2] == undefined) {
-      break;
-    }
-    cur.next = ListNode();
-    cur = cur.next;
-  }
-  return sumLi;
+  
+  return 
 };
 
 const sample1 = ListNode(0);
